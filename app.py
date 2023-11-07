@@ -130,7 +130,7 @@ with st.container():
 
 
 # ---- Descripcion de la pagina primera pagina de evol de variables diario----
-df = pd.read_excel('assets/dolar_blue.xlsx')
+df = pd.read_excel('dolar_blue.xlsx')
 
 list_option = ['Dólar Blue', 'Dólar CCL', 'Dólar MEP', 'Dólar CRYPTO', 'Ind Merval', 'Plazo Fijo']
 option = st.radio("Seleccione una opción : ", (list_option), horizontal=True )
@@ -162,7 +162,7 @@ st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
 # ---- Descripcion de la segunda pagina de evol de variables nominal vs inflacion mensual----
 
-df1 = pd.read_excel('assets/dolar_blue1.xlsx')
+df1 = pd.read_excel('dolar_blue1.xlsx')
 
 #list_option = ['Dólar Blue', 'Dólar CCL', 'Dólar MEP', 'Dólar CRYPTO', 'Ind Merval', 'Plazo Fijo']
 #option = st.radio("Seleccione una opción : ",(list_option), horizontal=True )
@@ -303,7 +303,7 @@ else:
 
 # ---- Descripcion de la tercera pagina de evol de variables descontada la inflacion mensual----
 
-df2 = pd.read_excel('assets/dolar_blue2.xlsx')
+df2 = pd.read_excel('dolar_blue2.xlsx')
 st.subheader(f"Evolución del Valor de : {option} descontado inflación (IPC)")
 st.write('periodo mensual expresado en base=100 dic/2019')
 st.write("Se grafica con streamlit y con plotly debido a que se puede manipular el gráfico de alternativas distintas ")
@@ -416,7 +416,7 @@ else:
 
 # ---- Descripcion de la cuarta pagina de evol de variables descontada la inflacion mensual----
 
-df3 = pd.read_excel('assets/dolar_blue3.xlsx')
+df3 = pd.read_excel('dolar_blue3.xlsx')
 
 #list_option = ['Dólar Blue', 'Dólar CCL', 'Dólar MEP', 'Dólar CRYPTO', 'Ind Merval', 'Plazo Fijo']
 #option = st.radio("Seleccione una opción : ", (list_option), horizontal=True )
@@ -857,7 +857,7 @@ with st.container():
 
 # ---- Descripcion de la quinta pagina de prediccion de rendimientos y animación mensual ----
 
-df4 = pd.read_excel('assets/dolar_blue3.xlsx')
+df4 = pd.read_excel('dolar_blue3.xlsx')
 
 #list_option = ['Dólar Blue', 'Dólar CCL', 'Dólar MEP', 'Dólar CRYPTO', 'Ind Merval', 'Plazo Fijo']
 #option = st.radio("Seleccione una opción : ", (list_option), horizontal=True )
